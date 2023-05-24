@@ -1,0 +1,50 @@
+body {
+  font-family: "Bruno Ace SC", cursive;
+  color: #5a6275;
+  background-color: rgb(232, 238, 237);
+}
+h1 {
+  color: rgb(110, 78, 190);
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 40px;
+}
+h2 {
+  color: rgb(110, 78, 190);
+  font-size: 36px;
+  font-weight: bolder;
+}
+div .form .form-control {
+  font-size: 10px;
+}
+.buttonsearch {
+  font-size: 20px;
+  color: #5a6275;
+}
+.buttonperiod {
+  color: rgb(110, 78, 190);
+  font-size: 18px;
+  margin-left: 0px;
+}
+.date {
+  color: rgb(110, 78, 190);
+}
+.daytoday {
+  font-size: 30px;
+}
+.timetoday {
+  color: rgb(110, 78, 190);
+  font-size: 48px;
+}
+.gradtoday {
+  font-size: 48px;
+}
+.smoll-letter {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
+.col-1 {
+  font-size: 13px;
+  text-align: center;
+}
