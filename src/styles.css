@@ -48,3 +48,14 @@ div .form .form-control {
   font-size: 13px;
   text-align: center;
 }
+.link_owner {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.see_info {
+  text-decoration: none;
+}
+.see_info:hover {
+  text-decoration: underline;
+}
