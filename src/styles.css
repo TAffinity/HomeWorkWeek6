@@ -59,3 +59,17 @@ div .form .form-control {
 .see_info:hover {
   text-decoration: underline;
 }
+.active {
+  color: #5a6275;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+}
+.f-link {
+  text-decoration: none;
+}
+.f-link:hover {
+  text-decoration: underline;
+}
