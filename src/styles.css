@@ -19,7 +19,7 @@ li {
   padding: 0;
 }
 h2 {
-  color: rgb(63, 95, 182);
+  color: rgb(20, 105, 210);
   font-size: 36px;
   font-weight: bolder;
 }
@@ -47,11 +47,11 @@ div .form-control {
   color: #5a6275;
 }
 .buttonperiod {
-  color: rgb(63, 95, 182);
+  color: rgb(20, 105, 210);
   font-size: 14px;
 }
 .date {
-  color: rgb(63, 95, 182);
+  color: rgb(20, 105, 210);
 }
 .img {
   margin: 0;
@@ -60,7 +60,7 @@ div .form-control {
   height: 55px;
 }
 .timetoday {
-  color: rgb(63, 95, 182);
+  color: rgb(20, 105, 210);
   font-size: 34px;
 }
 .gradtoday {
