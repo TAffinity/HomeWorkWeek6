@@ -26,185 +26,192 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather in the World</h1>
-      <div class="row mt-5">
-        <div class="col-3">
-          <form id="search-form">
-            <div class="form">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search City ore ZIP code"
-                autocomplete="off"
-                autofocus="on"
-                id="search-text-input"
-              />
+      <div class="weather-app-wrapper">
+        <!-- делаю ограниченное поле для текста-->
+        <div class="weather-app">
+          <!-- делаю рамку вокруг текста-->
+          <h1>Weather in the World</h1>
+          <div class="row mt-5">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-5">
+                  <form id="search-form">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search City ore ZIP code"
+                      autocomplete="off"
+                      autofocus="on"
+                      id="search-text-input"
+                    />
+                  </form>
+                </div>
+                <div class="col-2">
+                  <button type="submit" class="btn btn-light buttonsearch">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button
+                    type="button"
+                    class="btn btn-light buttonsearch"
+                    id="current-location-button"
+                  >
+                    Current location
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="col-3">
-              <button type="submit" class="btn btn-light buttonsearch">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-3">
-          <div class="row">
-            <div class="col-2">
-              <button
-                type="button"
-                class="btn btn-light buttonperiod"
-                id="current-location-button"
-              >
-                Gurrent
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="row">
-            <div class="col-3">
-              <button type="button" class="btn btn-light buttonperiod">
-                Week
-              </button>
-            </div>
-            <div class="col-3 period">
-              <button type="button" class="btn btn-light buttonperiod">
-                10 day
-              </button>
-            </div>
-            <div class="col-3 period">
-              <button type="button" class="btn btn-light buttonperiod">
-                Month
-              </button>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-3">
+                  <button type="button" class="btn btn-light buttonperiod">
+                    Week
+                  </button>
+                </div>
+                <div class="col-3 period">
+                  <button type="button" class="btn btn-light buttonperiod">
+                    10 day
+                  </button>
+                </div>
+                <div class="col-3 period">
+                  <button type="button" class="btn btn-light buttonperiod">
+                    Month
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <br />
-        <div class="row mt-5">
-          <div class="col-4 mt-5">
-            <br />
-            <br />
-            <ul>
-              <li>
-                <h2>✔️</h2>
-              </li>
-              <li>
-                <span class="now-day"></span>
-                <span class="date"></span>
-              </li>
-              <li>
-                <span class="description"></span>
-                <img src="" alt="" id="icon" class="img" />
-              </li>
-            </ul>
+
+          <div class="row mt-5">
+            <div class="col-4 mt-5">
+              <ul>
+                <li>
+                  <h2></h2>
+                </li>
+                <li>
+                  <span class="now-day"></span>
+                  <span class="date"></span>
+                </li>
+                <li>
+                  <span class="description"></span>
+                  <img src="" alt="" id="icon" class="img" />
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-4 mt-5">
+              <ul>
+                <li>
+                  <span class="daytoday"> Today</span>
+                </li>
+                <li>
+                  <span class="timetoday"></span>
+                </li>
+                <li>
+                  <span class="gradtoday" id="gradtoday"></span>
+                  <span class="smoll-letter">
+                    <a href="#" id="celsius" class="active">°C</a> |
+                    <a href="#" id="fahrenheit" class="f-link">°F</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-4 mt-5">
+              <br />
+              <p>
+                Humidity: <span id="humidity"></span>%
+                <br />
+                Wind: <span id="wind"></span>km/h
+              </p>
+            </div>
           </div>
-          <div class="col-4 mt-5">
-            <p>
-              <span class="daytoday"> Today</span>
-              <br />
-              <span class="timetoday"></span>
-              <br />
-              <span class="gradtoday" id="gradtoday"></span>
-              <span class="smoll-letter">
-                <a href="#" id="celsius" class="active">°C</a> |
-                <a href="#" id="fahrenheit" class="f-link">°F</a>
-              </span>
-            </p>
-          </div>
-          <div class="col-4 mt-5">
-            <br />
-            <br />
-            <br />
-            <p>
-              Humidity: <span id="humidity"></span>%
-              <br />
-              Wind: <span id="wind"></span>km/h
-            </p>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-1 mt-5">
-            <p class="time">
-              5:00
-              <br />
-              🌧️
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              7:00
-              <br />
-              🌦️
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              9:00
-              <br />
-              🌥️
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              11:00
-              <br />
-              ⛅
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              13:00
-              <br />
-              🌞
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              15:00
-              <br />
-              🌤️
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              17:00
-              <br />
-              🌖
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              19:00
-              <br />
-              🌗
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              21:00
-              <br />
-              🌚
-            </p>
-          </div>
-          <div class="col-1 mt-5">
-            <p class="time">
-              23:00
-              <br />
-              ⛈️
-            </p>
+
+          <div class="row mt-5">
+            <div class="col-1 mt-5">
+              <p class="time">
+                5:00
+                <br />
+                🌧️
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                7:00
+                <br />
+                🌦️
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                9:00
+                <br />
+                🌥️
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                11:00
+                <br />
+                ⛅
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                13:00
+                <br />
+                🌞
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                15:00
+                <br />
+                🌤️
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                17:00
+                <br />
+                🌖
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                19:00
+                <br />
+                🌗
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                21:00
+                <br />
+                🌚
+              </p>
+            </div>
+            <div class="col-1 mt-5">
+              <p class="time">
+                23:00
+                <br />
+                ⛈️
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <p class="link_owner">
+        <a
+          href="https://github.com/TAffinity/HomeWorkWeek6"
+          target="_blank"
+          class="see_info"
+          >Open-source code</a
+        >, by Tatiana Bugulova
+      </p>
     </div>
     <script src="src/app.js"></script>
-
-    <p class="link_owner">
-      <a
-        href="https://github.com/TAffinity/HomeWorkWeek6"
-        target="_blank"
-        class="see_info"
-        >Open-source code</a
-      >, by Tatiana Bugulova
-    </p>
   </body>
 </html>

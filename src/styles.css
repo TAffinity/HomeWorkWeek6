@@ -1,14 +1,13 @@
 body {
-  font-family: "Bruno Ace SC", cursive;
-  color: #5a6275;
-  background-color: rgb(232, 238, 237);
-  font-size: 20px;
+  background-color: rgb(253, 241, 108, 0.7);
+  font-size: 18px;
 }
+
 h1 {
-  color: rgb(110, 78, 190);
+  color: #5a6275;
   font-size: 24px;
   font-weight: lighter;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 ul {
   margin: 0;
@@ -20,44 +19,58 @@ li {
   padding: 0;
 }
 h2 {
-  color: rgb(110, 78, 190);
+  color: rgb(63, 95, 182);
   font-size: 36px;
   font-weight: bolder;
 }
-div .form .form-control {
-  font-size: 10px;
-  width: 300px;
+div .form-control {
+  font-size: 12px;
+}
+.weather-app-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgb(69, 193, 231),
+    rgb(88, 242, 188)
+  );
+  border: 1px solid rgb(69, 220, 231);
+  border-radius: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5a6275;
+}
+.weather-app {
+  padding-left: 80px;
 }
 .buttonsearch {
-  font-size: 20px;
+  font-size: 12px;
   color: #5a6275;
 }
 .buttonperiod {
-  color: rgb(110, 78, 190);
-  font-size: 18px;
-  margin-left: 0px;
+  color: rgb(63, 95, 182);
+  font-size: 14px;
 }
 .date {
-  color: rgb(110, 78, 190);
+  color: rgb(63, 95, 182);
 }
 .img {
+  margin: 0;
+  padding: 0;
   width: 65px;
-  height: 65px;
-}
-.daytoday {
-  font-size: 30px;
+  height: 55px;
 }
 .timetoday {
-  color: rgb(110, 78, 190);
-  font-size: 48px;
+  color: rgb(63, 95, 182);
+  font-size: 34px;
 }
 .gradtoday {
-  font-size: 48px;
+  font-size: 34px;
 }
 .smoll-letter {
   position: relative;
   top: -20px;
-  font-size: 20px;
+  left: -5px;
+  font-size: 14px;
 }
 .col-1 {
   font-size: 13px;
@@ -65,8 +78,8 @@ div .form .form-control {
 }
 .link_owner {
   font-size: 10px;
-  margin-top: 10px;
-  margin-left: 50px;
+  margin-top: -20px;
+  margin-left: 150px;
 }
 .see_info {
   text-decoration: none;
