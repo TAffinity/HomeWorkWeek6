@@ -2,12 +2,22 @@ body {
   font-family: "Bruno Ace SC", cursive;
   color: #5a6275;
   background-color: rgb(232, 238, 237);
+  font-size: 20px;
 }
 h1 {
   color: rgb(110, 78, 190);
   font-size: 24px;
   font-weight: lighter;
   margin-top: 40px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   color: rgb(110, 78, 190);
@@ -16,6 +26,7 @@ h2 {
 }
 div .form .form-control {
   font-size: 10px;
+  width: 300px;
 }
 .buttonsearch {
   font-size: 20px;
@@ -28,6 +39,10 @@ div .form .form-control {
 }
 .date {
   color: rgb(110, 78, 190);
+}
+.img {
+  width: 65px;
+  height: 65px;
 }
 .daytoday {
   font-size: 30px;

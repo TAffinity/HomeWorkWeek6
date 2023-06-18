@@ -60,10 +60,12 @@ nowTime.innerHTML = fullTime(dayNow);
 а беру то, что поставила в формулу. В данном случае time ( time.getHours();)
 */
 function showTemperature(response) {
+  console.log(response.data);
   let cityName = document.querySelector("h2");
   cityName.innerHTML = `✔️ ${response.data.name}`;
   let Temperature = document.querySelector("#gradtoday");
   Temperature.innerHTML = Math.round(response.data.main.temp);
+  let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -73,6 +75,11 @@ function showTemperature(response) {
   );
   document.querySelector(".description").innerHTML =
     response.data.weather[0].main;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {

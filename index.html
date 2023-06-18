@@ -84,13 +84,31 @@
           <div class="col-4 mt-5">
             <br />
             <br />
-            <h2>✔️</h2>
-            <br />
+            <ul>
+              <li>
+                <h2>✔️</h2>
+              </li>
+              <li>
+                <span class="now-day"></span>
+                <span class="date"></span>
+              </li>
+              <li>
+                <span class="description"></span>
+                <img src="" alt="" id="icon" class="img" />
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 mt-5">
             <p>
-              <span class="now-day"></span>
-              <span class="date"></span>
+              <span class="daytoday"> Today</span>
               <br />
-              <span class="description"></span>
+              <span class="timetoday"></span>
+              <br />
+              <span class="gradtoday" id="gradtoday"></span>
+              <span class="smoll-letter">
+                <a href="#" id="celsius" class="active">°C</a> |
+                <a href="#" id="fahrenheit" class="f-link">°F</a>
+              </span>
             </p>
           </div>
           <div class="col-4 mt-5">
@@ -101,19 +119,6 @@
               Humidity: <span id="humidity"></span>%
               <br />
               Wind: <span id="wind"></span>km/h
-            </p>
-          </div>
-          <div class="col-4 mt-5">
-            <p>
-              <span class="daytoday"> Today</span>
-              <br />
-              <span class="timetoday"></span>
-              <br />
-              🌥️<span class="gradtoday" id="gradtoday"></span>
-              <span class="smoll-letter">
-                <a href="#" id="celsius" class="active">°C</a> |
-                <a href="#" id="fahrenheit" class="f-link">°F</a>
-              </span>
             </p>
           </div>
         </div>
