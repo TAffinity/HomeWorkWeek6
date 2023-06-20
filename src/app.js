@@ -68,10 +68,12 @@ function showTemperature(response) {
 
   celsiusTemperature = response.data.main.temp;
 
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
+  document.querySelector(
+    "#humidity"
+  ).innerHTML = `${response.data.main.humidity}%`;
+  document.querySelector("#wind").innerHTML = `${Math.round(
     response.data.wind.speed
-  );
+  )}km/h`;
   document.querySelector(".description").innerHTML =
     response.data.weather[0].main;
   iconElement.setAttribute(
@@ -130,6 +132,8 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let celsiusTemperature = null;
+/* ввела внешнюю переменную для использования в любых ф-циях
+ и самой переменной и присвоенных ей значений в любых функциях */
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
@@ -140,3 +144,4 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertCelsius);
 
 searchCity("London");
+/* чтобы изначально было не пустое значение, а сразу показывало для Лондона */

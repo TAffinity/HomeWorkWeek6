@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -32,9 +32,9 @@
           <!-- делаю рамку вокруг текста-->
           <h1>Weather in the World</h1>
           <div class="row mt-5">
-            <div class="col-6">
+            <div class="col-4">
               <div class="row">
-                <div class="col-5">
+                <div class="col-8">
                   <form id="search-form">
                     <input
                       type="text"
@@ -46,33 +46,29 @@
                     />
                   </form>
                 </div>
-                <div class="col-2">
+                <div class="col-1">
                   <button type="submit" class="btn btn-light buttonsearch">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-                <div class="col-4">
-                  <button
-                    type="button"
-                    class="btn btn-light buttonsearch"
-                    id="current-location-button"
-                  >
-                    Current location
                   </button>
                 </div>
               </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-4">
+              <button
+                type="button"
+                class="btn btn-light buttonsearch"
+                id="current-location-button"
+              >
+                Current location
+              </button>
+            </div>
+
+            <div class="col-3">
               <div class="row">
-                <div class="col-3">
+                <div class="col-5 period">
                   <button type="button" class="btn btn-light buttonperiod">
-                    Week
-                  </button>
-                </div>
-                <div class="col-3 period">
-                  <button type="button" class="btn btn-light buttonperiod">
-                    10 day
+                    14 day
                   </button>
                 </div>
                 <div class="col-3 period">
@@ -122,83 +118,25 @@
             <div class="col-4 mt-5">
               <br />
               <p>
-                Humidity: <span id="humidity"></span>%
+                Humidity: <span id="humidity" class="humidity"></span>
                 <br />
-                Wind: <span id="wind"></span>km/h
+                Wind: <span id="wind" class="wind"></span>
               </p>
             </div>
           </div>
 
-          <div class="row mt-5">
-            <div class="col-1 mt-5">
-              <p class="time">
-                5:00
-                <br />
-                🌧️
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                7:00
-                <br />
-                🌦️
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                9:00
-                <br />
-                🌥️
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                11:00
-                <br />
-                ⛅
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                13:00
-                <br />
-                🌞
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                15:00
-                <br />
-                🌤️
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                17:00
-                <br />
-                🌖
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                19:00
-                <br />
-                🌗
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                21:00
-                <br />
-                🌚
-              </p>
-            </div>
-            <div class="col-1 mt-5">
-              <p class="time">
-                23:00
-                <br />
-                ⛈️
-              </p>
+          <div class="forecast">
+            <div class="row">
+              <div class="col">
+                <div class="forecast-date">Mon</div>
+                🌍
+                <img src="" alt="" width="36" />
+
+                <div class="forecast-temp">
+                  <span class="forecast-temp-max">25°</span>
+                  <span class="forecast-temp-min">20°</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

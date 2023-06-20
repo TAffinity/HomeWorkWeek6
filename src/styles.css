@@ -1,6 +1,7 @@
 body {
   background-color: rgb(253, 241, 108, 0.7);
-  font-size: 18px;
+  font-family: "Work Sans", serif;
+  font-size: 20px;
 }
 
 h1 {
@@ -36,11 +37,10 @@ div .form-control {
   );
   border: 1px solid rgb(69, 220, 231);
   border-radius: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #5a6275;
 }
 .weather-app {
-  padding-left: 80px;
+  padding-left: 110px;
 }
 .buttonsearch {
   font-size: 12px;
@@ -53,24 +53,34 @@ div .form-control {
 .date {
   color: rgb(20, 105, 210);
 }
+
 .img {
   margin: 0;
   padding: 0;
   width: 65px;
   height: 55px;
 }
-.timetoday {
+.daytoday {
   color: rgb(20, 105, 210);
+}
+.timetoday {
   font-size: 34px;
 }
 .gradtoday {
   font-size: 34px;
+  color: rgb(20, 105, 210);
 }
 .smoll-letter {
   position: relative;
   top: -20px;
   left: -5px;
   font-size: 14px;
+}
+.humidity {
+  color: rgb(20, 105, 210);
+}
+.wind {
+  color: rgb(20, 105, 210);
 }
 .col-1 {
   font-size: 13px;
@@ -100,4 +110,20 @@ div .form-control {
 }
 .f-link:hover {
   text-decoration: underline;
+}
+.forecast {
+  padding-right: 100px;
+  margin: 50px 0 30px -10px;
+  text-align: center;
+}
+.forecast-date {
+  font-size: 16px;
+  opacity: 0.7;
+}
+.forecast-temp-min {
+  opacity: 0.7;
+}
+.forecast-temp {
+  font-size: 14px;
+  color: rgb(20, 105, 210);
 }
