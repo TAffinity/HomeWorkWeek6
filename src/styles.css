@@ -29,7 +29,7 @@ div .form-control {
 }
 .weather-app-wrapper {
   max-width: 1000px;
-  margin: 40px auto;
+  margin: 80px auto;
   background-image: -webkit-linear-gradient(
     top,
     rgb(69, 193, 231),
@@ -40,7 +40,7 @@ div .form-control {
   color: #5a6275;
 }
 .weather-app {
-  padding-left: 110px;
+  padding-left: 100px;
 }
 .buttonsearch {
   font-size: 12px;
@@ -111,12 +111,12 @@ div .form-control {
 .f-link:hover {
   text-decoration: underline;
 }
-.forecast {
-  padding-right: 100px;
+.weather-forecast {
+  padding-right: 90px;
   margin: 50px 0 30px -10px;
   text-align: center;
 }
-.forecast-date {
+.weather-forecast-date {
   font-size: 16px;
   opacity: 0.7;
 }

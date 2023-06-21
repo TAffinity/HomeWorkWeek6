@@ -59,6 +59,29 @@ nowTime.innerHTML = fullTime(dayNow);
 использую не dayNow из (let dayNow = new Date();)
 а беру то, что поставила в формулу. В данном случае time ( time.getHours();)
 */
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col">
+          <div class="weather-forecast-date">${day}</div>
+                🌍
+          <img src="" alt="" width="36" />
+            <div class="forecast-temp">
+              <span class="forecast-temp-max">25°</span>
+              <span class="forecast-temp-min">20°</span>
+            </div>
+          </div>
+        `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let cityName = document.querySelector("h2");
   cityName.innerHTML = `🌍${response.data.name}`;
@@ -145,3 +168,4 @@ celsiusLink.addEventListener("click", convertCelsius);
 
 searchCity("London");
 /* чтобы изначально было не пустое значение, а сразу показывало для Лондона */
+displayForecast();
