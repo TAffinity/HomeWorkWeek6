@@ -82,6 +82,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "701f06352d61835bc4fc894e7b084629";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+} /*!!!!!!!!!!*/
+
 function showTemperature(response) {
   let cityName = document.querySelector("h2");
   cityName.innerHTML = `🌍${response.data.name}`;
@@ -104,6 +111,7 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord); /*!!!!!!!!!!*/
 }
 
 function searchCity(city) {
@@ -143,6 +151,7 @@ function convertCelsius(event) {
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
 function searchLocation(position) {
+  /* console.log(position); */
   let apiKey = "701f06352d61835bc4fc894e7b084629";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
@@ -168,4 +177,4 @@ celsiusLink.addEventListener("click", convertCelsius);
 
 searchCity("London");
 /* чтобы изначально было не пустое значение, а сразу показывало для Лондона */
-displayForecast();
+/*displayForecast(); */
