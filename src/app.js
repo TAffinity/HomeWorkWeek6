@@ -156,14 +156,14 @@ function search(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);}*/
 
-function convertFahrenheit(event) {
+/*function convertFahrenheit(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#gradtoday");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
   tempElement.innerHTML = Math.round(fahrenheiTemperature);
-}
+} 
 function convertCelsius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#gradtoday");
@@ -171,6 +171,7 @@ function convertCelsius(event) {
   fahrenheitLink.classList.remove("active");
   tempElement.innerHTML = Math.round(celsiusTemperature);
 }
+*/
 function searchLocation(position) {
   /* console.log(position); */
   let apiKey = "701f06352d61835bc4fc894e7b084629";
@@ -184,17 +185,18 @@ function getCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-let celsiusTemperature = null;
+/*let celsiusTemperature = null; */
 /* ввела внешнюю переменную для использования в любых ф-циях
  и самой переменной и присвоенных ей значений в любых функциях */
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", convertFahrenheit);
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", convertCelsius);
+/*let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", convertFahrenheit); */
+
+/*let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", convertCelsius); */
 
 searchCity("London");
 /* чтобы изначально было не пустое значение, а сразу показывало для Лондона */
