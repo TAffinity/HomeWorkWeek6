@@ -88,7 +88,7 @@ div .form-control {
 }
 .link_owner {
   font-size: 10px;
-  margin-top: -20px;
+  margin-top: -80px;
   margin-left: 150px;
 }
 .see_info {
@@ -126,4 +126,7 @@ div .form-control {
 .forecast-temp {
   font-size: 16px;
   color: rgb(20, 105, 210);
+}
+.current-location {
+  text-align: right;
 }
